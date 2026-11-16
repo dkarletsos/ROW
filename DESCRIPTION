@@ -1,0 +1,19 @@
+Package: ROW
+Type: Package
+Title: Regularised Outcome-Weighted Estimation of the Average Treatment Effect
+Version: 0.1.0
+Authors@R: person("Dimitris", "Karletsos", email = "dimitris.karletsos@gmail.com", role = c("aut", "cre"))
+Description: Estimates the average treatment effect (ATE) for comparisons of two or
+    more treatments in observational data with limited covariate overlap. The ROW
+    estimator averages per-arm outcome models over all patients and corrects them with
+    residuals weighted by regularised inverse probability weights 1/(e_A(X) + 1/lambda).
+    The tuning parameter lambda is chosen by an outcome-blind balance rule, and
+    standard errors come from an M-estimation sandwich that accounts for estimation of
+    the generalised propensity score and the outcome models.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: nnet, stats
+LazyData: true
+URL: https://github.com/dkarletsos/ROW
+BugReports: https://github.com/dkarletsos/ROW/issues

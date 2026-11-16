@@ -1,0 +1,7 @@
+export(row_ate)
+export(row_path)
+export(row_weights)
+S3method(print, row)
+S3method(coef, row)
+S3method(confint, row)
+importFrom(stats, coef, confint)

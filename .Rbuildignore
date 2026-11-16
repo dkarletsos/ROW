@@ -1,0 +1,10 @@
+^PHUSE2026_final$
+^PHUSE2026_.*\.(docx|pptx)$
+^code$
+^figures$
+^results.*$
+^README\.md$
+^\.git$
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.gitignore$

@@ -1,0 +1,20 @@
+# PHUSE conference material: kept locally, never pushed
+PHUSE2026_final/
+PHUSE2026_*.docx
+PHUSE2026_*.pptx
+figures/
+*.pptx
+*.docx
+*.pdf
+*.tex
+
+# R / OS clutter
+.Rhistory
+.RData
+.Rproj.user/
+*.Rcheck/
+*.tar.gz
+.DS_Store
+
+# raw simulation output (large; summaries in results*/ are kept)
+*.rds
