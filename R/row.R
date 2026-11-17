@@ -54,10 +54,12 @@
   IFmu <- IFnv <- matrix(0, n, K); mu <- numeric(K)
   for (k in seq_len(K)) {
     i <- A == k; Xi <- Xo[i, , drop = FALSE]
-    XtX <- crossprod(Xi) / n
-    b <- qr.solve(crossprod(Xi), crossprod(Xi, Y[i]))
+    qx <- qr(Xi)
+    if (qx$rank < q) stop("the outcome model is rank-deficient in treatment level ", k, "; simplify 'outcome_formula'")
+    b <- qr.coef(qx, Y[i])
+    XtXinv <- n * chol2inv(qr.R(qx))[order(qx$pivot), order(qx$pivot)]   # (X'X / n)^{-1}, numerically stable
     m <- as.vector(Xo %*% b); r <- Y - m
-    IFb <- matrix(0, n, q); IFb[i, ] <- (Xi * r[i]) %*% qr.solve(XtX)
+    IFb <- matrix(0, n, q); IFb[i, ] <- (Xi * r[i]) %*% XtXinv
     wk <- if (is.infinite(c)) 1 / ps[, k] else 1 / (ps[, k] + 1 / (c * K^2))
     w <- wk * i
     nu <- mean(m); rho <- sum(w * r) / sum(w); mu[k] <- nu + rho

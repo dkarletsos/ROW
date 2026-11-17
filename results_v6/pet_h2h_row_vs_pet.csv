@@ -1,0 +1,7 @@
+"method","design","n","row_better","sig_better","sig_worse","median_ratio"
+"AIPW-PET","heldout",48,32,30,8,0.913
+"PET","heldout",48,41,32,5,0.823
+"AIPW-PET","main",96,94,88,0,0.826
+"PET","main",96,96,93,0,0.746
+"AIPW-PET","stress",128,103,86,10,0.797
+"PET","stress",128,99,83,18,0.811

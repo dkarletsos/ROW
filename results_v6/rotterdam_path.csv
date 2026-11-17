@@ -1,0 +1,25 @@
+"lambda_K2","contrast","estimate","se"
+0.125,"hormonal vs none",-0.036,0.064
+0.125,"chemo vs none",-0.082,0.071
+0.25,"hormonal vs none",-0.036,0.064
+0.25,"chemo vs none",-0.082,0.071
+0.5,"hormonal vs none",-0.037,0.064
+0.5,"chemo vs none",-0.082,0.072
+1,"hormonal vs none",-0.041,0.064
+1,"chemo vs none",-0.081,0.072
+2,"hormonal vs none",-0.048,0.065
+2,"chemo vs none",-0.077,0.073
+4,"hormonal vs none",-0.058,0.066
+4,"chemo vs none",-0.069,0.074
+8,"hormonal vs none",-0.067,0.069
+8,"chemo vs none",-0.058,0.074
+16,"hormonal vs none",-0.075,0.072
+16,"chemo vs none",-0.046,0.075
+32,"hormonal vs none",-0.08,0.076
+32,"chemo vs none",-0.034,0.076
+64,"hormonal vs none",-0.082,0.078
+64,"chemo vs none",-0.025,0.077
+128,"hormonal vs none",-0.082,0.08
+128,"chemo vs none",-0.019,0.078
+Inf,"hormonal vs none",-0.081,0.082
+Inf,"chemo vs none",-0.012,0.078
